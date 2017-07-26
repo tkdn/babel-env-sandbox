@@ -1,0 +1,42 @@
+{
+  "name": "babel-env-sandbox",
+  "version": "0.0.1",
+  "description": "try babel-preset-env@2.0",
+  "author": "Satoshi Takeda <tkdnation@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tkdn/babel-env-sandbox.git"
+  },
+  "scripts": {
+    "build:development": "cross-env BABEL_ENV=development webpack",
+    "build:android2": "cross-env BABEL_ENV=android2 webpack",
+    "build:android4": "cross-env BABEL_ENV=android4 webpack",
+    "build:ie10": "cross-env BABEL_ENV=ie10 webpack",
+    "build:ios9": "cross-env BABEL_ENV=ios9 webpack",
+    "build:chrome": "cross-env BABEL_ENV=chrome webpack",
+    "build:recent": "cross-env BABEL_ENV=recent webpack",
+    "build": "cross-env NODE_ENV=production npm-run-all build:*",
+    "cleanup": "rimraf docs/android2 docs/android4 docs/polyfill docs/chrome docs/development docs/ie10 docs/ios9 docs/recent",
+    "dev": "cross-env NODE_ENV=development npm-run-all build:*",
+    "prebuild": "npm run cleanup",
+    "predev": "npm run cleanup"
+  },
+  "devDependencies": {
+    "babel-core": "next",
+    "babel-loader": "next",
+    "babel-polyfill": "next",
+    "babel-preset-env": "next",
+    "babili-webpack-plugin": "^0.1.2",
+    "cross-env": "^5.0.0",
+    "es3ify-webpack-plugin": "^0.0.1",
+    "html-webpack-plugin": "^2.29.0",
+    "npm-run-all": "^4.0.2",
+    "rimraf": "^2.6.1",
+    "webpack": "^3.2.0"
+  },
+  "dependencies": {
+    "es5-shim": "^4.5.9",
+    "whatwg-fetch": "^2.0.3"
+  }
+}

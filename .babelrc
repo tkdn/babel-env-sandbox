@@ -1,0 +1,91 @@
+{
+  "env": {
+    "development": {
+      "presets": [
+        ["env", {
+          "useBuiltIns": "usage",
+          "debug": true,
+          "modules": false,
+          "loose": true
+        }]
+      ]
+    },
+    "android2": {
+      "presets": [
+        ["env", {
+          "targets": {
+            "browsers": ["android >= 2"]
+          },
+          "useBuiltIns": "usage",
+          "debug": true,
+          "modules": false,
+          "loose": true
+        }]
+      ]
+    },
+    "android4" : {
+      "presets": [
+        ["env", {
+          "targets": {
+            "browsers": ["android >= 4"]
+          },
+          "useBuiltIns": "usage",
+          "debug": true,
+          "modules": false,
+          "loose": true
+        }]
+      ]
+    },
+    "ie10": {
+      "presets": [
+          ["env", {
+          "targets": {
+            "browsers": ["ie >= 10"]
+          },
+          "useBuiltIns": "usage",
+          "debug": true,
+          "modules": false,
+          "loose": true
+        }]
+      ]
+    },
+    "ios9": {
+      "presets": [
+          ["env", {
+          "targets": {
+            "browsers": ["ios >= 9"]
+          },
+          "useBuiltIns": "usage",
+          "debug": true,
+          "modules": false,
+          "loose": true
+        }]
+      ]
+    },
+    "chrome": {
+      "presets": [
+          ["env", {
+          "targets": {
+            "browsers": ["chrome >= 59"]
+          },
+            "useBuiltIns": "usage",
+            "debug": true,
+            "modules": false
+        }]
+      ]
+    },
+    "recent": {
+      "presets": [
+        ["env", {
+          "targets": {
+            "browsers": ["last 1 version"]
+          },
+          "useBuiltIns": "usage",
+          "debug": true,
+          "modules": false,
+          "loose": true
+        }]
+      ]
+    }
+  }
+}
