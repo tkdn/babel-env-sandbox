@@ -1,3 +1,4 @@
+import 'babel-polyfill'
 import es2015ArrowFunction from './es2015/ArrowConstLet'
 import es2015Classes from './es2015/Classes'
 import es2015GeneratorFunction from './es2015/Generator'

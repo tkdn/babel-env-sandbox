@@ -3,7 +3,7 @@
     "development": {
       "presets": [
         ["env", {
-          "useBuiltIns": "usage",
+          "useBuiltIns": true,
           "debug": true,
           "modules": false,
           "loose": true
@@ -16,7 +16,7 @@
           "targets": {
             "browsers": ["android >= 2"]
           },
-          "useBuiltIns": "usage",
+          "useBuiltIns": true,
           "debug": true,
           "modules": false,
           "loose": true
@@ -29,7 +29,7 @@
           "targets": {
             "browsers": ["android >= 4"]
           },
-          "useBuiltIns": "usage",
+          "useBuiltIns": true,
           "debug": true,
           "modules": false,
           "loose": true
@@ -42,7 +42,7 @@
           "targets": {
             "browsers": ["ie >= 10"]
           },
-          "useBuiltIns": "usage",
+          "useBuiltIns": true,
           "debug": true,
           "modules": false,
           "loose": true
@@ -55,7 +55,7 @@
           "targets": {
             "browsers": ["ios >= 9"]
           },
-          "useBuiltIns": "usage",
+          "useBuiltIns": true,
           "debug": true,
           "modules": false,
           "loose": true
@@ -68,7 +68,7 @@
           "targets": {
             "browsers": ["chrome >= 59"]
           },
-            "useBuiltIns": "usage",
+            "useBuiltIns": true,
             "debug": true,
             "modules": false
         }]
@@ -80,7 +80,7 @@
           "targets": {
             "browsers": ["last 1 version"]
           },
-          "useBuiltIns": "usage",
+          "useBuiltIns": true,
           "debug": true,
           "modules": false,
           "loose": true
