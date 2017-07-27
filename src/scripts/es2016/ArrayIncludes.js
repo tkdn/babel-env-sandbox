@@ -2,8 +2,15 @@
  * Array.prototype.include
  * 
  */
-function arrayInludes() {
-  return [1, 2, 3].includes(3)
+function arrayInludes(arr, val) {
+  return arr.includes(val)
 }
 
-export default arrayInludes()
+/**
+ * 上記関数はbabelが型推論までしないのでトランスパイルされない
+ * const arr = [1, 2, 3]
+ * arr.includes(3)
+ * 上記もトランスパイルしない
+ */
+
+export default [1, 2, 3].includes(3)

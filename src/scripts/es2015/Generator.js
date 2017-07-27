@@ -2,13 +2,13 @@
  * Generator Sample
  * 
  */
-function* functionGenerator (i) {
+function* generatorFunction (i) {
   yield i + 1
   yield i + 2
   yield i + 3
 }
 
-const gen = functionGenerator(10)
+const gen = generatorFunction(10)
 gen.next()
 gen.next()
 

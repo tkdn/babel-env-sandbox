@@ -2,8 +2,8 @@
  * Exponentiation Operator
  * 
  */
-function square (x, y) {
+function squareFunction (x, y) {
   return x ** y
 }
 
-export default square(3, 2) === 9
+export default squareFunction(3, 2) === 9

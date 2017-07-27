@@ -12,7 +12,6 @@ class SampleClass {
   }
   getName () {
     const { firstName, lastName } = this
-
     return `${firstName} ${lastName}`
   }
 }
