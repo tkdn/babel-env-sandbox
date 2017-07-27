@@ -298,7 +298,7 @@
     __webpack_exports__["a"] = "Charles Bukowski" === new SampleClass().getName();
 }, function(module, __webpack_exports__, __webpack_require__) {
     "use strict";
-    function functionGenerator(i) {
+    function generatorFunction(i) {
         return regeneratorRuntime.wrap(function(_context) {
             for (;;) switch (_context.prev = _context.next) {
               case 0:
@@ -317,7 +317,7 @@
         }, _marked[0], this);
     }
     var __WEBPACK_IMPORTED_MODULE_0_babel_polyfill_lib_regenerator_runtime_runtime__ = __webpack_require__(18), _marked = (__webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_polyfill_lib_regenerator_runtime_runtime__), 
-    [ functionGenerator ].map(regeneratorRuntime.mark)), gen = functionGenerator(10);
+    [ generatorFunction ].map(regeneratorRuntime.mark)), gen = generatorFunction(10);
     gen.next(), gen.next(), __webpack_exports__["a"] = 13 === gen.next().value;
 }, function(module, exports, __webpack_require__) {
     (function(global) {
@@ -1032,20 +1032,18 @@
     };
 }, function(module, __webpack_exports__, __webpack_require__) {
     "use strict";
-    function functionForSpread(x, y, z) {
+    function withSpreadParams(x, y, z) {
         return x + y + z;
     }
     __webpack_exports__["a"] = 6 === function(x) {
         return x + (arguments.length <= 1 ? 0 : arguments.length - 1);
-    }(3, "ho", !0, 1) && 6 === functionForSpread.apply(void 0, [ 1, 2, 3 ]);
+    }(3, "ho", !0, 1) && 6 === withSpreadParams.apply(void 0, [ 1, 2, 3 ]);
 }, function(module, __webpack_exports__, __webpack_require__) {
     "use strict";
     var __WEBPACK_IMPORTED_MODULE_0_babel_polyfill_lib_core_js_modules_es7_array_includes__ = __webpack_require__(69), __WEBPACK_IMPORTED_MODULE_1_babel_polyfill_lib_core_js_modules_es6_string_includes__ = (__webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_polyfill_lib_core_js_modules_es7_array_includes__), 
     __webpack_require__(72));
     __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_polyfill_lib_core_js_modules_es6_string_includes__);
-    __webpack_exports__["a"] = function() {
-        return [ 1, 2, 3 ].includes(3);
-    }();
+    __webpack_exports__["a"] = [ 1, 2, 3 ].includes(3);
 }, function(module, exports, __webpack_require__) {
     "use strict";
     __webpack_require__(70);
