@@ -2,11 +2,11 @@
   "name": "babel-env-sandbox",
   "version": "0.0.1",
   "description": "try babel-preset-env@2.0",
-  "author": "Satoshi Takeda <tkdnation@gmail.com>",
+  "author": "[mediba] Satoshi Takeda <takeda@mediba.jp>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tkdn/babel-env-sandbox.git"
+    "url": "https://github.com/mediba-takeda/babel-env-sandbox.git"
   },
   "scripts": {
     "build:development": "cross-env BABEL_ENV=development webpack",
