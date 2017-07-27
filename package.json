@@ -23,10 +23,10 @@
     "predev": "npm run cleanup"
   },
   "devDependencies": {
-    "babel-core": "next",
-    "babel-loader": "next",
-    "babel-polyfill": "next",
-    "babel-preset-env": "next",
+    "babel-core": "7.0.0-alpha.16",
+    "babel-loader": "^7.1.1",
+    "babel-polyfill": "7.0.0-alpha.16",
+    "babel-preset-env": "2.0.0-alpha.16",
     "babili-webpack-plugin": "^0.1.2",
     "cross-env": "^5.0.0",
     "es3ify-webpack-plugin": "^0.0.1",
