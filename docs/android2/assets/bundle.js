@@ -283,13 +283,10 @@
     }();
 }, function(module, __webpack_exports__, __webpack_require__) {
     "use strict";
-    function _classCallCheck(instance, Constructor) {
-        if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
-    }
     var SampleClass = function() {
-        function SampleClass() {
-            var firstName = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "Charles", lastName = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "Bukowski";
-            _classCallCheck(this, SampleClass), this.firstName = firstName, this.lastName = lastName;
+        function SampleClass(firstName, lastName) {
+            void 0 === firstName && (firstName = "Charles"), void 0 === lastName && (lastName = "Bukowski"), 
+            this.firstName = firstName, this.lastName = lastName;
         }
         return SampleClass.prototype.getName = function() {
             return this.firstName + " " + this.lastName;
