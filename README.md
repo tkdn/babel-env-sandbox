@@ -7,4 +7,4 @@
 
 # Article
 
-http://ceblog.mediba.jp/post/163508048767/babel-preset-env-v2/
+http://ceblog.mediba.jp/post/163780014387/babel-preset-env-v2
