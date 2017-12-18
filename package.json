@@ -20,20 +20,22 @@
     "cleanup": "rimraf docs/android2 docs/android4 docs/polyfill docs/chrome docs/development docs/ie10 docs/ios9 docs/recent",
     "dev": "cross-env NODE_ENV=development npm-run-all build:*",
     "prebuild": "npm run cleanup",
-    "predev": "npm run cleanup"
+    "predev": "npm run cleanup",
+    "cli:development": "babel src/scripts/index.js -o bundle.js"
   },
   "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.35",
+    "@babel/core": "^7.0.0-beta.35",
+    "@babel/preset-env": "^7.0.0-beta.35",
     "babel-core": "7.0.0-alpha.16",
-    "babel-loader": "^7.1.1",
-    "babel-polyfill": "7.0.0-alpha.16",
-    "babel-preset-env": "2.0.0-alpha.16",
+    "babel-loader": "^8.0.0-beta.0",
     "babili-webpack-plugin": "^0.1.2",
     "cross-env": "^5.0.0",
     "es3ify-webpack-plugin": "^0.0.1",
     "html-webpack-plugin": "^2.29.0",
     "npm-run-all": "^4.0.2",
     "rimraf": "^2.6.1",
-    "webpack": "^3.2.0"
+    "webpack": "^3.10.0"
   },
   "dependencies": {
     "es5-shim": "^4.5.9",

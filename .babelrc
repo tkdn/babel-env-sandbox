@@ -1,8 +1,19 @@
 {
+  "presets": [
+    ["@babel/env", {
+      "targets": {
+        "browsers": ["android >= 2"]
+      },
+      "useBuiltIns": "usage",
+      "debug": true,
+      "modules": false,
+      "loose": true
+    }]
+  ],
   "env": {
     "development": {
       "presets": [
-        ["env", {
+        ["@babel/env", {
           "useBuiltIns": "usage",
           "debug": true,
           "modules": false,
@@ -12,7 +23,7 @@
     },
     "android2": {
       "presets": [
-        ["env", {
+        ["@babel/env", {
           "targets": {
             "browsers": ["android >= 2"]
           },
@@ -25,7 +36,7 @@
     },
     "android4" : {
       "presets": [
-        ["env", {
+        ["@babel/env", {
           "targets": {
             "browsers": ["android >= 4"]
           },
@@ -38,7 +49,7 @@
     },
     "ie10": {
       "presets": [
-          ["env", {
+          ["@babel/env", {
           "targets": {
             "browsers": ["ie >= 10"]
           },
@@ -51,7 +62,7 @@
     },
     "ios9": {
       "presets": [
-          ["env", {
+          ["@babel/env", {
           "targets": {
             "browsers": ["ios >= 9"]
           },
@@ -64,7 +75,7 @@
     },
     "chrome": {
       "presets": [
-          ["env", {
+          ["@babel/env", {
           "targets": {
             "browsers": ["chrome >= 59"]
           },
@@ -76,7 +87,7 @@
     },
     "recent": {
       "presets": [
-        ["env", {
+        ["@babel/env", {
           "targets": {
             "browsers": ["last 1 version"]
           },
